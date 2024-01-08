@@ -1,0 +1,34 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  background-color: var(--clr-01dp);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--clr-fg);
+  background-color: var(--clr-02dp);
+}
+
+@media (min-width: 768px) {
+  .filter {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

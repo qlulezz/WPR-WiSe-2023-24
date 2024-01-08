@@ -1,0 +1,27 @@
+.button {
+  color: var(--clr-fg);
+  padding: 5px 10px;
+  border: 2px solid var(--clr-accent);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button.primary, .button.secondary {
+  background-color: var(--clr-accent);
+  transition: all 150ms ease;
+}
+
+.button.primary:hover, .button.secondary:hover {
+  background-color: var(--clr-bg-transparent);
+  border: 2px solid var(--clr-accent);
+}
+
+.button.secondary {
+  background-color: var(--clr-btn);
+  border-color: transparent;
+}
